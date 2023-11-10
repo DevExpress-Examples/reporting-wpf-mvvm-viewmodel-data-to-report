@@ -1,13 +1,8 @@
-<!-- default badges list -->
-![](https://img.shields.io/endpoint?url=https://codecentral.devexpress.com/api/v1/VersionRange/417419878/2023.1)
-[![](https://img.shields.io/badge/Open_in_DevExpress_Support_Center-FF7200?style=flat-square&logo=DevExpress&logoColor=white)](https://supportcenter.devexpress.com/ticket/details/T1036945)
-[![](https://img.shields.io/badge/📖_How_to_use_DevExpress_Examples-e9f6fc?style=flat-square)](https://docs.devexpress.com/GeneralInformation/403183)
-<!-- default badges end -->
 # How to Use ViewModel Data as Report Parameters in a WPF MVVM Application
 
 This example demonstrates how to pass data from the ViewModel to a report. The row selected in the Data Grid is used as a report parameter. When the user selects a row and clicks a button, a new modal window is invoked. The window contains the DocumentPreviewControl that displays the report with the specified parameter applied.
 
-![Screenshot](Images/screenshot.png)
+![Screenshot](images/screenshot.png)
 
 The `MainViewModel`retrieves a list of employees from the database and tracks the currently selected employee. The MainViewModel defines the **ShowPrintPreview** command that instantiates a report with the current employee as a parameter and creates the **DocumentPreviewViewModel** view model instance that contains the current report. The command uses the [DialogService](https://docs.devexpress.com/WPF/17467/mvvm-framework/services/predefined-set/dialog-services/dialogservice) to show the modal window with the report preview.
 
