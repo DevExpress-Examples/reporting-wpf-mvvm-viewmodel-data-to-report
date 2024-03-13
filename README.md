@@ -7,7 +7,7 @@
 
 This example demonstrates how to pass data from the ViewModel to a report. The row selected in the Data Grid is used as a report parameter. When the user selects a row and clicks a button, a new modal window is invoked. The window contains the DocumentPreviewControl that displays the report with the specified parameter applied.
 
-![Screenshot](images/screenshot.png)
+![Screenshot](Images/screenshot.png)
 
 The `MainViewModel`retrieves a list of employees from the database and tracks the currently selected employee. The MainViewModel defines the **ShowPrintPreview** command that instantiates a report with the current employee as a parameter and creates the **DocumentPreviewViewModel** view model instance that contains the current report. The command uses the [DialogService](https://docs.devexpress.com/WPF/17467/mvvm-framework/services/predefined-set/dialog-services/dialogservice) to show the modal window with the report preview.
 
